@@ -1,0 +1,198 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/*-----header-----*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 16pt;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    padding: 0 60px;
+    background-color: #0f172a;
+}
+.logo{
+    display: inline-flex;
+    gap: 15px;
+    color: white;
+    align-items: center;
+    padding: 8px 12px;
+    font-weight: bold;
+    font-size: 18pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav img{
+    width: 53px;
+    height: 53px;
+    object-fit: cover;
+}
+.nav-content{
+    display: flex;
+    list-style-type: none;
+}
+li{
+    color: white;
+}
+li a{
+    padding: 17px 20px;
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: goldenrod;
+}
+
+/*-----hero-banner------*/
+
+.hero-section{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(bg\ img.png);
+    text-align: center;
+    justify-items: center;
+    height: 100vh;
+    background-size: cover;
+    object-fit: cover;
+}
+.hero{
+    padding-top: 250px;
+    color: white;
+}
+.cta-primary{
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 6px;
+    background-color: #0f172a;
+    color: white;
+    margin-top: 10px;
+}
+.cta-primary:hover{
+    background-color: white;
+    color: #0f172a;
+}
+/*-----FEATURES SECTION---------*/
+.features {
+    min-height: 100vh;
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #020617, #0f172a, #172554);
+    color: white;
+    text-align: center;
+}
+
+.features  h1 {
+    margin-bottom: 15px;
+}
+
+.features  p {
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.col {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 1px 2px 8px #020617;
+    transition: 0.3s;
+}
+
+.col:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title h2 {
+    margin-bottom: 20px;
+}
+
+.card-text p {
+    line-height: 1.6;
+}
+
+
+/* pricing*/
+
+.pricing {
+    min-height: 100vh;
+    padding: 70px 50px;
+    text-align: center;
+    background: linear-gradient(135deg, #020617, #0f172a, #172554);
+}
+
+.pricing h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.pricing-text {
+    margin-bottom: 40px;
+    color:white;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.price-card:hover{
+    transform: translateY(-10px);
+}
+
+.price-card {
+    transition: 0.3s;
+    padding: 30px;
+    box-shadow: 1px 2px 8px #020617;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    
+}
+
+.price-card h2 {
+    color: white;
+}
+
+.price-card h3 {
+    font-size: 35px;
+}
+
+.price-card p {
+    color: white;
+}
+
+.price-card button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background: #1e3a8a;
+    color: white;
+    margin-top: 10px;
+}
+/*----footer----*/
+
+footer{
+    text-align: center;
+    background-color: #0f172a;
+    color: white;
+    padding: 20px;
+}
+footer p{
+    margin: 0;
+}
